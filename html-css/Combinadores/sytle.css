@@ -1,0 +1,6 @@
+/*h2 + p { /* Significa  que aplicar el estilo a un p que este cerca de un h2
+    color: red;
+}*/
+h2 ~ p {/*Significa que aplicará el estilo a todos los hermanos de p en este caso h3 y h2*/
+    color: red;
+}

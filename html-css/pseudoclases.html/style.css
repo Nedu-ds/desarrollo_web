@@ -1,0 +1,27 @@
+.main_nav{
+    margin-top: 10px;
+    list-style: none;  /*Remove dots of the list*/
+    padding-left: 0px;
+    background-color: #13a4a4;
+    height: 40px;
+}
+.main_nav__item{
+   display: inline-block;
+}
+.main_nav__item a{
+    color:white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.main_nav__item a:hover{  /*Change item color when put the mouse in there*/
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.main_nav__item a:active{ /*Change item color when press click with the mouse*/
+    color: rgb(91, 113, 161);
+} 
+.main_nav__item a::after{/* Insert an object after the item*/
+    content: " | ";
+}

@@ -1,0 +1,7 @@
+/* div > p { /*Aplica el estilo cuando p es un hijo directo de div
+    color: red;
+}*/
+
+div p{ /*Todos las etiquetas p que esten adentro de un etiqueta p */
+    color: red;
+}

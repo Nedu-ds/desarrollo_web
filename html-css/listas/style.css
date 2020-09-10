@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(226, 227, 228);
+}
+
+header{
+    background-color: rgb(9, 28, 44);
+    color: whitesmoke;
+}
+h1{
+    margin-left: auto important!;
+    margin-right: auto important!;
+}
+
+a#preparacion{
+    text-decoration: none;
+    color: whitesmoke;
+}
+section{
+    background-color: rgb(209, 222, 236);
+}
+
+
+
+img{
+    width: 60px;
+    height: 60px;
+}
