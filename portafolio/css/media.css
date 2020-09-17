@@ -1,0 +1,67 @@
+header{
+    display: block;
+    height: 50px;
+    position:fixed ; 
+    top: 0;
+    right: 0;
+}
+header .section-left{
+    height: 8vh;
+    width: auto;
+    display: flex;
+    justify-items: center;   
+    align-items: center;  
+}
+header nav .nav-bar.is-active{
+    right:-2px;
+    margin-right: 0;
+}
+header nav .nav-bar{
+    position: fixed;
+    background-color:rgba(202, 194, 194, 0.9);
+    z-index: 3;
+    color:black;
+    width: 100vw;
+    height: 25vh;
+    right: -200vh;
+    display: flex;
+    flex-direction: column;
+    top: 3.5vh;
+    transition: 0.3s;
+}
+
+header nav .nav-bar li{
+    height: 5vh;
+    text-align: center;
+    font-size: 1rem;
+    margin-right: 0;
+}
+header nav .nav-bar li a{
+    color: black;
+    font-size: 1.5rem;
+}
+header nav .nav-bar li a:hover{
+    color: rgb(33, 33, 92);
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+}
+
+.burger-button{
+    display: block;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+
+main .main-home p:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .main-Work{
+    height: 120vh;
+}
+main .main-Work div{
+    height: 50vh;
+}

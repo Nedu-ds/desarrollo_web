@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafio_Nestor</title>
+    <link rel="stylesheet" href="./css/style.css" media="screen and (max-width:2000px)">
+    <link rel="stylesheet" href="./css/media.css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width:480px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:320px)">
+</head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header>
+        <section class="section-left">
+            <span>DevFolio</span>
+        </section>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#main-Home">Home</a></li>
+                <li><a href="#main-About">About</a></li>
+                <li><a href="#main-Work">Work</a></li>
+                <li><a href="#main-Blog">Blog</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-Home" id="main-Home">
+            <p>I am Néstor Duque</p>
+            <p>Web Developer</p>
+        </section>
+        <section class="main-About" id="main-About"> 
+            <div class="main-About-container">
+                <p>About Me</p>
+            </div>
+        </section>
+        <section class="main-Work" id="main-Work"> 
+            <div class="main-Work-container">
+                <div class="cibersecurity">
+                    <img src="https://marketing4ecommerce.net/wp-content/uploads/2016/07/ciberseguridad-1280x720.jpg" alt="Cibersecurity-Logo">
+                    <p><strong>Cibersecurity</strong> </p> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, eum adipisci repudiandae consectetur doloribus corrupti doloremque sunt animi quaerat quam</p>
+                </div>
+                <div>Technical Support Engineer</div>
+                <div>Sofware Developer</div>
+                <div>Data Scientist</div>
+            </div>
+        </section>
+        <section class="main-Blog" id="main-Blog"> 
+
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-left">
+            <p id="footer-left-mail"></p>
+            <p>nestor_duque@hotmail.com</p>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li id="twitter" title="Twitter"><a href=""></a></li>
+                <li id="linkedin" title="LinkedIn"><a href=""></a></li>
+                <li id="github" title="Github"><a href=""></a></li>
+            </ul>
+            
+        </div>
+    </footer>
+    <script>
+        //console.log("Hola Mundo");
+        const menu = document.querySelector('.nav-bar');
+        const ipad = window.matchMedia('screen and (max-width:768px)');
+        const burgerButton = document.querySelector('#burger-menu');
+        
+        
+        ipad.addListener(validation)
+
+        function validation(event){
+            if (event.matches){
+                burgerButton.addEventListener('click',hideShow)
+            } else {
+                burgerButton.removeEventListener('click',hideShow)
+            }
+        }
+        function hideShow(){
+            if (menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }   
+        }
+    </script>
+</body>
+</html>

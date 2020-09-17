@@ -121,6 +121,8 @@ main .main-buttons button:hover{
     color: #222;
 }
 footer{
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 50px;
     position: absolute;
