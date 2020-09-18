@@ -147,16 +147,74 @@ main .main-About{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     
 }
 main .main-About-container{
+    padding: 5vh 6vw;
     margin: 0 auto;
-    width: 70vw;
+    width: 90vw;
     height: 70vh;
     background-color: white;
     box-shadow: 1px 1px 1px 1px #c6c6c6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+main .main-About-container .personal-information{
+    border: 1px solid red;
+    height: 60vh;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main .main-About-container .personal-information .information{
+    padding: 2%;
+    width: 35vw;
+    height: 50;
+    display: flex;
+    border: 1px solid rgb(0, 26, 255);
+    font-size: 0.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main .main-About-container .personal-information .information .photo img{
+    padding: 0.5vw 2vw;
+    height: 15vh;
+    min-width: 8vw;
+    border-radius: 10vh;
+}
+main .main-About-container .personal-information .information .data{
+    padding: 1vw;
+    padding-left: 1vw;
+}
+
+main .main-About-container .personal-information .skills{
+    padding: 0 1vw;
+    padding-left: 1vw;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid red;
+}
+
+main .main-About-container .About-me{
+    border: 1px solid red;
+    height: 60vh;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:4vh;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
 main .main-Work{   
     width: 100vw;
     height: 100vh;
@@ -187,12 +245,12 @@ main .main-Work div div{
     text-align: center;
     padding: 2vw;
 }
-main .main-Work div .cibersecurity img{
+main .main-Work div .main-Work-container-area img{
     height: 10vh;
     min-width: 10vw;
 }
 
-main .main-Work div .cibersecurity p{
+main .main-Work div .main-Work-container-area p{
     margin-top: 2vh;
     max-width: 80vw;
 }

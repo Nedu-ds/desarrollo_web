@@ -65,3 +65,24 @@ main .main-Work{
 main .main-Work div{
     height: 50vh;
 }
+main .main-About{
+    height: 200vh;
+}
+main .main-About-container{
+    height: 180vh;
+    display: block;
+
+}
+
+main .main-About .main-About-container .personal-information{
+    display: block;
+    height: 60vh;
+    width: 75vw;
+}
+
+main .main-About .main-About-container .About-me{
+    display: block;
+    height: 50h;
+    width: 75vw;
+}
+

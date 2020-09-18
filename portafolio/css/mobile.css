@@ -24,6 +24,32 @@ main .main-Home p:nth-child(2){
     font-size: 2.5rem;
     position: relative;
 }
+main .main-About{
+    display: block;
+}
+main .main-About-container{
+    height: 210vh;
+}
+
+
+main .main-About .main-About-container .personal-information{
+    height: 110vh;
+}
+main .main-About-container .personal-information .information{
+    display: block;
+    width: auto;
+}
+
+main .main-About-container .personal-information .information .photo{
+    display: flex;
+    justify-content: center;
+}
+main .main-About-container .personal-information .skills{
+    height:82vh;
+}
+main .main-About .main-About-container .About-me{
+    height: 92vh;
+}
 
 footer{
     height: 15vh;
