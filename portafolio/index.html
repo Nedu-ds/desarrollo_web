@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafio_Nestor</title>
     <link rel="stylesheet" href="./css/style.css" media="screen and (max-width:2000px)">
+    <link rel="stylesheet" href="./css/large.css" media="screen and (max-width:1420px)">
     <link rel="stylesheet" href="./css/media.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width:480px)">
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:320px)">
@@ -105,16 +106,23 @@
         const menu = document.querySelector('.nav-bar');
         const ipad = window.matchMedia('screen and (max-width:768px)');
         const burgerButton = document.querySelector('#burger-menu');
+        const main = document.querySelector('main');
         ipad.addListener(validation)
         validation(ipad);
 
         function validation(event){
             if (event.matches){
-                burgerButton.addEventListener('click',hideShow)
+                burgerButton.addEventListener('click',hideShow);
+                main.addEventListener('click', hideMenu);
             } else {
-                burgerButton.removeEventListener('click',hideShow)
+                burgerButton.removeEventListener('click',hideShow);
+                main.removeEventListener('click', hideMenu);
             }
         }
+        function hideMenu(){
+            menu.classList.remove('is-active');
+        }
+        
         function hideShow(){
             if (menu.classList.contains('is-active')){
                 menu.classList.remove('is-active');
