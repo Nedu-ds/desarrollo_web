@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./images/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section div.logo {
+    width: 85vw;
+    max-width: 650px;
+    height: 200px;
+    border-radius: 10px;
+    border-top-right-radius: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 10%;
+    background-color: hsl(228, 56%, 26%);
+
+}
+section div.logo img{
+    margin: 10px;
+    width: 140px;
+}
+
+section div.logo ul{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+}
+section div.logo ul li{
+    width: 45px;
+    height: 45px;
+    background-color: hsl(229, 57%, 11%);
+    margin-right: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.logo ul li a {
+    text-decoration: none;
+}
+section div.logo ul li a img{
+    width: 20px;
+    height: 18px;
+}
+section div.storage-display{
+    width: 85vw;
+    max-width: 650px;
+    height: 135px;
+    margin-top: 20px;
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #e8e8e8;
+    font-size:  14px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+section div.storage-display .progress-bar-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 65vw;
+    max-width: 550px;
+    height: 2.3vh;
+    border-radius: 10px;
+    background-color: hsl(229deg 56% 17%);
+    display: flex;
+    align-items: center;
+    
+}
+section div.storage-display .progress-bar-container .progress-bar-status{
+    width: 45vw;
+    height: 1.5vh;
+    max-width: 380px;
+    margin-left: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section div.storage-display .progress-bar-container .progress-bar-status .progress-bar-status-point{
+    width: 10px;
+    height: 10px;
+    background-color: white;    
+    border-radius: 10px;
+    margin-right: 1px;
+}
+
+
+section div.storage-display .progress-bar-message{
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    margin-top: 85px;
+    background-color:white;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(229, 57%, 11%);
+    font-size: 34px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section div.storage-display .progress-bar-message p:nth-child(2){
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+    
+
+section div.storage-display .progress-bar-size{
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+    max-width: 550px;
+}
+
+
+/* - Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%) *
