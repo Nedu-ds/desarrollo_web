@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url('./images/bg-desktop.png');
+    background-position: bottom;
+    background-size: 100% 50%;
+    background-color: hsl(229, 57%, 11%);
+}
+section div.logo {
+    width: 22vw;
+    
+    margin-right: 2vw;
+}
+section div.storage-display{
+    margin-top: 8vh;
+    width: 35vw;
+    justify-content: center;
+}
+section div.storage-display .progress-bar-container{
+    width: 30vw;
+}
+section div.storage-display .progress-bar-container .progress-bar-status{
+    width: 23vw
+}
+section div.storage-display .progress-bar-size{
+    width: 30vw;
+}
+section div.storage-display div.progress-bar-information{
+    width: 85%;
+}
+section div.storage-display .progress-bar-message{
+    margin-top: -180px;
+    margin-right: -100px;
+}
+section div.storage-display .progress-bar-message .progress-bar-message-triangle{
+    clip-path: polygon(100% 45%, 0 0, 100% 0);
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    margin-right: -90px;
+    margin-top: 115px;
+}
