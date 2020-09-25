@@ -1,10 +1,13 @@
 header{
-    height: 50px;
+    height: 58px;
     position: fixed;
-    top: 0;;
+    top: 0;
+}
+header .section-left{
+    height: 55px;
 }
 header nav .nav-bar{
-    top: 6vh;
+    top: 42px;
 }
 .burger-button{
     top: 10px;
@@ -23,6 +26,33 @@ main .main-Home p:nth-child(2){
     color: white;
     font-size: 2.5rem;
     position: relative;
+}
+main .main-About{
+    display: block;
+    height: 230vh;
+}
+main .main-About-container{
+    height: 230vh;
+}
+
+main .main-About .main-About-container .personal-information{
+    height: 140vh;
+}
+main .main-About-container .personal-information .information{
+    display: block;
+    width: auto;
+    height: 22%;
+}
+
+main .main-About-container .personal-information .information .photo{
+    display: flex;
+    justify-content: center;
+}
+main .main-About-container .personal-information .skills{
+    height:82vh;
+}
+main .main-About .main-About-container .About-me{
+    height: 92vh;
 }
 
 footer{

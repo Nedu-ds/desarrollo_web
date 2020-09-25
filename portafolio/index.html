@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafio_Nestor</title>
     <link rel="stylesheet" href="./css/style.css" media="screen and (max-width:2000px)">
+    <link rel="stylesheet" href="./css/large.css" media="screen and (max-width:1420px)">
     <link rel="stylesheet" href="./css/media.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width:480px)">
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:320px)">
@@ -32,19 +33,54 @@
         </section>
         <section class="main-About" id="main-About"> 
             <div class="main-About-container">
-                <p>About Me</p>
+                <div class="personal-information">
+                    <div class="information"> 
+                        <div class="photo">
+                            <img src="./fonts/Foto.png" alt="Data-Scientist-Logo">
+                        </div>
+                        <div class="data">
+                            <p><strong>Name:</strong>  Néstor Duque</p><br>
+                            <p><strong>Profile:</strong>  Cibersecurity Expert</p><br>
+                            <p><strong>Email:</strong>  nestor_duque@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p><strong>Skills</strong> </p><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse nam blanditiis atque voluptatibus doloribus pariatur tenetur debitis ipsam assumenda reiciendis cupiditate in nihil eligendi cumque id, deleniti magni recusandae.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse nam blanditiis atque voluptatibus doloribus pariatur tenetur debitis ipsam assumenda reiciendis cupiditate in nihil eligendi cumque id, deleniti magni recusandae.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse nam blanditiis atque voluptatibus doloribus pariatur tenetur debitis ipsam assumenda reiciendis cupiditate in nihil eligendi cumque id, deleniti magni recusandae.</p>
+                    </div>
+                </div>
+                <div class="About-me">
+                    <p><strong>About Me</strong></p><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aspernatur dolorum incidunt voluptate non harum reprehenderit corrupti iste repudiandae sapiente. Aliquam expedita laboriosam eligendi quidem earum non maiores qui quisquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, velit corrupti reprehenderit cumque excepturi ipsa, quam omnis commodi labore aperiam debitis, eos fugit eveniet rerum quisquam reiciendis consequuntur alias? Veniam.</p>
+                </div>
+                
             </div>
         </section>
         <section class="main-Work" id="main-Work"> 
             <div class="main-Work-container">
-                <div class="cibersecurity">
+                <div class="main-Work-container-area">
                     <img src="https://marketing4ecommerce.net/wp-content/uploads/2016/07/ciberseguridad-1280x720.jpg" alt="Cibersecurity-Logo">
                     <p><strong>Cibersecurity</strong> </p> 
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, eum adipisci repudiandae consectetur doloribus corrupti doloremque sunt animi quaerat quam</p>
                 </div>
-                <div>Technical Support Engineer</div>
-                <div>Sofware Developer</div>
-                <div>Data Scientist</div>
+                <div class="main-Work-container-area">
+                    <img src="https://sites.google.com/site/elmundoenmismanos123/_/rsrc/1487191110318/home/conceptos-basicos-de-redes-e-internet/REDES-1.jpg" alt="TS-Engineer-Logo">
+                    <p><strong>Technical Support Engineer</strong> </p> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, eum adipisci repudiandae consectetur doloribus corrupti doloremque sunt animi quaerat quam</p>
+                </div>
+                <div class="main-Work-container-area">
+                    <img src="https://img-a.udemycdn.com/course/750x422/2370324_79ee_2.jpg" alt="FrontEnd-Logo">
+                    <p><strong>Front End Developer</strong> </p> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, eum adipisci repudiandae consectetur doloribus corrupti doloremque sunt animi quaerat quam</p>
+                </div>
+                <div class="main-Work-container-area">
+                    <img src="https://miro.medium.com/max/925/1*E1haIGB9K4K89PsFZgm-pw.jpeg" alt="Data-Scientist-Logo">
+                    <p><strong>Data Scientist</strong> </p> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, eum adipisci repudiandae consectetur doloribus corrupti doloremque sunt animi quaerat quam</p>
+                </div>
             </div>
         </section>
         <section class="main-Blog" id="main-Blog"> 
@@ -70,17 +106,23 @@
         const menu = document.querySelector('.nav-bar');
         const ipad = window.matchMedia('screen and (max-width:768px)');
         const burgerButton = document.querySelector('#burger-menu');
-        
-        
+        const main = document.querySelector('main');
         ipad.addListener(validation)
+        validation(ipad);
 
         function validation(event){
             if (event.matches){
-                burgerButton.addEventListener('click',hideShow)
+                burgerButton.addEventListener('click',hideShow);
+                main.addEventListener('click', hideMenu);
             } else {
-                burgerButton.removeEventListener('click',hideShow)
+                burgerButton.removeEventListener('click',hideShow);
+                main.removeEventListener('click', hideMenu);
             }
         }
+        function hideMenu(){
+            menu.classList.remove('is-active');
+        }
+        
         function hideShow(){
             if (menu.classList.contains('is-active')){
                 menu.classList.remove('is-active');

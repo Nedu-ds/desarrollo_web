@@ -1,22 +1,25 @@
 header{
     display: block;
-    height: 50px;
+    height: 55px;
     position:fixed ; 
     top: 0;
     right: 0;
 }
 header .section-left{
-    height: 8vh;
+    height: 55px;
     width: auto;
     display: flex;
     justify-items: center;   
     align-items: center;  
 }
 header nav .nav-bar.is-active{
+   
     right:-2px;
     margin-right: 0;
 }
+
 header nav .nav-bar{
+    top: 23px;
     position: fixed;
     background-color:rgba(202, 194, 194, 0.9);
     z-index: 3;
@@ -26,7 +29,6 @@ header nav .nav-bar{
     right: -200vh;
     display: flex;
     flex-direction: column;
-    top: 3.5vh;
     transition: 0.3s;
 }
 
@@ -44,6 +46,10 @@ header nav .nav-bar li a:hover{
     color: rgb(33, 33, 92);
     font-size: 1.5rem;
     text-decoration-line: underline;
+}
+
+main{
+    width: 100vw;
 }
 
 .burger-button{
@@ -65,3 +71,54 @@ main .main-Work{
 main .main-Work div{
     height: 50vh;
 }
+
+main .main-Work div div{
+    width: 43vw;
+    margin-right: 2vw;
+}
+main .main-About{
+    display: block;
+    height: 180vh;
+}
+main .main-About-container{
+    height: 185vh;
+}
+
+main .main-About .main-About-container .personal-information{
+    height: 110vh;
+}
+main .main-About-container .personal-information .information{
+    display: block;
+    width: auto;
+    height: 33%;
+}
+
+
+main .main-About-container .personal-information .information .photo{
+    display: flex;
+    justify-content: center;
+}
+main .main-About-container .personal-information .skills{
+    margin-top: 4vh;
+    height:82vh;
+}
+main .main-About .main-About-container .About-me{
+    height: 92vh;
+}
+
+footer{
+    height: 15vh;
+}
+
+main .main-About .main-About-container .personal-information{
+    display: block;
+    height: 115vh;
+    width: 75vw;
+}
+
+main .main-About .main-About-container .About-me{
+    display: block;
+    height: 50h;
+    width: 75vw;
+}
+
