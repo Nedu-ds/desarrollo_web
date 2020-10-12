@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: grid;
+    gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(4,100px);
+    /* grid-auto-flow: column; /*Para manejar la columnas sobrantes
+    grid-auto-columns: 50px 100px; */
+    grid-auto-rows:50px 100px;
+    /* justify-items: ; /*Alinea forma horizontal*/ /*start center end strech
+    align-items: ; Alinea de Forma Vertical */
+    /* justify-items: center;
+    align-items: center; */
+
+    /* justify-content: ;  start end center stretch space-around space-between space */
+    justify-content: center;
+    align-content: center;
+}
+.item{
+    background: lightblue;
+    
+    border: 1px solid red;
+    /* margin-right: 10px;
+    margin-bottom: 10px; */
+}
+.item:nth-of-type(5){
+    /* align-self: start;   /*Para alinar un solo objecto o a si mismo
+    justify-self: start; */
+}
