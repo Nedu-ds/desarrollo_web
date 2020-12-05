@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40vh;
+    min-height: 100vh;
+    
+    
+}
+
+#street{
+    position: relative;
+    width: 80%;
+    height: 160px;
+    background: #525252;
+    transform-origin: botton;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(30deg);   
+}
+#street::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg,#ffffff 0%, #ffffff 70%, #525252 70%, #525252 100%) ;
+    background-size: 120px;
+    animation: animatestreet 5s linear infinite;
+}
+@keyframes animatestreet{
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: -1536px;
+    }
+}
+
+#street::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: #333333;
+    bottom: -30px;
+    transform-origin: top;
+    transform: perspective(500px) rotateX(-25deg); 
+}
+#shadow{
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    height: 60px;
+    background: linear-gradient(#000000, transparent);
+    opacity: 0.5;
+     
+}
+#character{
+    height: 443px;
+    position: relative;
+    width: calc(3400px/5);
+    transform: perspective(400px) rotateX(-0deg) translateY(-350px);
+    background: url('../fond/dino.png');
+    animation: animatex 0.3s steps(5) infinite,
+               animatey 0.6s steps(2) infinite;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 90%, #0004);
+    
+}
+@keyframes animatex{
+    from{
+        background-position-x: 0px;
+        
+    }
+    to{
+        background-position-x: -3400px;
+       
+    }
+}
+@keyframes animatey{
+    from{
+        
+        background-position-y: 0px;
+    }
+    to{
+        
+        background-position-y: 960px;
+    }
+}
+
+.jump{
+
+}
